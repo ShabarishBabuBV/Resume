@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage{ragged2e}
+
+\usepackage{comment}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Shabarish Babu B Venkateshbabu} \\ \vspace{3 pt}
+    \small \raisebox{-0.1\height}\faPhone\ +1-979-739-3788 ~ \href{mailto:shabarishbabubv@gmail.com}{\raisebox{-0.2\height}\faEnvelope\ {shabarishbabubv@gmail.com}} ~ 
+    \href{https://linkedin.com/in/shabarishbabubv/}{\raisebox{-0.2\height}\faLinkedin\ {linkedin.com/in/shabarishbabubv}}  ~
+    {\raisebox{-0.2\height}\faHome\ {College Station, TX- 77840}}
+    \vspace{-8pt}
+\end{center}
+
+\vspace{0.1 pt}
+%-----------EDUCATION-----------
+\section{Education}
+    \textbf{Texas A\&M University \hspace{\fill} College Station, USA} \\
+    Master's in Computer Engineering GPA - 4.0/4.0 \hspace{\fill} Aug 2021 - May 2023 \\
+    COURSEWORK: Digital Integrated Circuit Design, Microprocessor System Design, Advanced Computer Architecture, Advanced Hardware Verification, FPGA Information Processing Systems
+    \medskip
+    
+    \textbf{RV College of Engineering \hspace{\fill} Bengaluru, India} \\
+    Bachelor's in Electronics and Communication Engineering GPA - 9.15/10.0 \hspace{\fill} Aug 2016 - May 2020 \\
+\vspace{-1 pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Tools}{: Synopsys compilers (VCS, MTI, Spyglass, Verdi), Cadence NC-Verilog, Spectre Sim-Vision, vManager, IMC, Matlab, Xilinx Vivado HLS } \\
+     \textbf{Programming/Scripting}{: Verilog, Basics of TCL \& Python Scripting , SystemVeriog, C, Basics of C++} \\
+     \textbf{RTL Design Skills}{: Conformal Low Power Analysis (CLP,UPF), Cross Domain Crossings (CDC), Lint Checks (PLDRC)} \\
+    }}
+ \end{itemize}
+\vspace{-12pt}
+ %-----------EXPERIENCE-----------
+\section{Experience}
+    \textbf{ASIC Design Clocks Intern, NVIDIA Corporation \hspace{\fill} Santa Clara, USA | May 2022 - Dec 2022} \\
+    \vspace{-8 pt}
+    \begin{justify}
+    $\cdot$ Working on Clock Network element consolidation, Clock Observability debug structure design. \newline $\cdot$ Clock components register specification and connection implementation.
+    \end{justify}
+    \vspace{-3 pt}
+    
+    \textbf{Associate Design Engineer, Qualcomm India \hspace{\fill} Bengaluru, India | August 2020 - July 2021} \\
+    \vspace{-8 pt}
+    \begin{justify}
+    $\cdot$ Clock and Reset requirements are fulfilled through Controller IP Design for multimedia sub-systems. \newline $\cdot$ The Design included power collapse Sequence for required clocks to implement low power design. \newline $\cdot$ RTL development with quality checks (Sanity Checks, Power constraint analysis, CDC, Lint Checks). \newline $\cdot$ I have worked on design of Duty Cycle distortion mitigation circuits for high frequency clocks. \newline $\cdot$ Timely renderings with working on multiple deliverable camera/video/graphics/display IP's.  
+    \end{justify}
+    
+    \textbf{Hardware Engineering Intern, Qualcomm India \hspace{\fill} Bengaluru, | January 2020 - August 2020} \\
+    \vspace{-8 pt}
+    \begin{justify}
+    \underline{SOC Memory Frequency Extraction Automation} The script is capable to trace back the drivers associated to each of the memory cell associated to different sub-system IPs through the Clock trunk components to report the frequency of operation and the driver module. \newline \underline{SOC Clock Diagram Enablement} Entire SOC clock routing is traced and a database is created to enable user friendly Clock diagram to look for any mismatch in hierarchy, to analyse clock loads/drives, domain crossings, to understand the clock routing procedures followed in legacy designs etc...
+    \end{justify}
+    \vspace{-3 pt}
+    
+\vspace{-12 pt}
+%-----------PROJECTS-----------
+\section{Projects}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Design of 8-Bit Pipelined Adder} \hspace{\fill} (Master's)
+     \vspace{-10 pt}
+     \begin{justify}
+     Design of schematic and transistor level layout on Cadence Virtuoso, and verified using NC-Verilog test-cases. Characterized the standard cells for propagation delay and gate capacitance, on Cadence Spectre. Performed gate sizing to optimize delay.
+     \end{justify} 
+     \vspace{1 pt}
+     
+    \textbf{Modelling of Real Time Traffic Grid and Model-Checking Verification} \hspace{\fill} (Master's)
+     \vspace{-10 pt}
+     \begin{justify}
+     Team of 4 worked on modelling a real time traffic grid which had a throughput of 95\%. Two of us worked on infrastructure part of the design. Our contribution was to operate the signals based on the traffic congestion in each road and keep a track on red light violations, number of collisions, and position of every car in the grid. Formal verification is performed using NuSMV, where safety, invariance, liveness, fairness and other custom properties are verified on the traffic system.
+     \end{justify} 
+     \vspace{1 pt}
+     
+   \textbf{Coverage-Driven design Verification of 4-Core Coherent L1 Cache using UVM in System Verilog} \hspace{\fill} (Master's)
+     \vspace{-10 pt}
+     \begin{justify}
+     Developed a Test-Plan for flat verification of the design using Cadence vManager. Test-bench completeness in System-bus and driver to design interface monitors. Randomized pre-generated test cases with inline constraints and directed test cases to identify bugs throughout the design (coherent 4-way associative L1 cache with MESI protocol, shared L2 cache, and golden memory with pseudo-LRU replacement mechanism and ideal arbiter with least recently served policy). Achieved functional coverage of 98.1\% and code coverage of 92\%.
+     \end{justify}
+     
+    \textbf{OoO processor working with store-load forwarding and load-store bypassing} \hspace{\fill} (Masters - Coursework Learning)
+     \vspace{-10 pt}
+     \begin{justify} Learnt the microarchitecture simulation of Out of order processor with fetch/rename, dispatch, issue, commit and retire mechanism using both Register Architecture File (ARF) and front-end/back-end Register Alias Table (RAT) architectures. Simulated different prefetching techniques like next-line, stride data prefetchers in ChampSim simulator.
+     \end{justify} 
+     \vspace{1 pt}
+     
+     \textbf{Conversion of Dataflow graph into Verilog code considering Physical Design algorithm constraints} \hspace{\fill} (Bachelor's)
+     \vspace{-10 pt} 
+     \begin{justify} 2 Bit Multiplier is designed by reading data through .csv file. C++ code is written by considering the data dependency to minimize the hardware usage. Scheduling algorithm ASAP is applied to the above considered application along with binding. Automated Verilog code is generated with the help of Vivado HLS RTL synthesis. Verilog code is tested for functionality.
+     \end{justify} 
+     \vspace{1 pt}
+    
+
+    }}
+ \end{itemize}
+\vspace{-12pt}
+
+
+%\begin{comment}
+%\section{Projects}
+
+%    \vspace{-13 pt}
+%\end{comment}
+    
+%-----------INVOLVEMENT---------------
+%\section{Awards and Recognition}
+%    Recipient of Departmental Scholarship from the Electrical and Computer Engineering Department, TAMU, USA \\
+
+\end{document}
